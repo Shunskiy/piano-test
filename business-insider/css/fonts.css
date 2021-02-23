@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Lab Grotesque Black";
+  src: url("fonts/LabGrotesque-Black.woff2") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Lab Grotesque Regular";
+  src: url("fonts/LabGrotesque-Regular.woff2") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Lab Grotesque Bold";
+  src: url("fonts/LabGrotesque-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lab Grotesque Medium";
+  src: url("fonts/LabGrotesque-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
