@@ -1,0 +1,263 @@
+@import url(fonts.css);
+@import url(normalize.css);
+
+html {
+  font-size: 62.5%;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+input {
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(../img/bg-desktop.png);
+  background-size: cover;
+  background-attachment: fixed;
+
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: "Futura Medium";
+
+  width: 898px;
+  height: 621px;
+}
+
+.container__logo {
+  margin-bottom: 15px;
+}
+
+.container__makeup-p {
+  font-size: 5rem;
+  letter-spacing: 4px;
+  line-height: 62px;
+  color: #f767b4;
+
+  margin-top: 15px;
+  margin-bottom: 7.5px;
+}
+
+.container__life-p-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: linear-gradient(
+    98deg,
+    #ff8664 0%,
+    #ff778e 51%,
+    #ff8bca 100%
+  );
+
+  width: 100%;
+  height: 20.5%;
+
+  margin-top: 7.5px;
+  margin-bottom: 12px;
+}
+
+.container__life-p {
+  font-size: 6.9rem;
+  letter-spacing: 7px;
+  line-height: 85px;
+
+  color: white;
+}
+
+.container__email-p {
+  font-size: 3rem;
+  line-height: 37px;
+  font-family: "Georgia";
+  font-style: italic;
+  color: rgb(51, 51, 51);
+
+  margin-top: 12px;
+  margin-bottom: 10.5px;
+}
+
+.container__arrow-icon {
+  display: none;
+}
+
+.container__email-box {
+  position: relative;
+
+  margin-top: 10.5px;
+  margin-bottom: 14px;
+}
+
+.container__email-input {
+  box-sizing: border-box;
+
+  font-size: 4rem;
+  padding-left: 6.5rem;
+
+  width: 763px;
+  height: 63px;
+
+  border: 2px solid #f767b4;
+}
+
+.container__email-icon {
+  position: absolute;
+  left: 17px;
+  top: 19px;
+}
+
+.container__submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f767b5;
+
+  width: 82.2%;
+  height: 18.8%;
+
+  margin-top: 14px;
+  margin-bottom: 11.5px;
+}
+
+.container__submit-a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  color: white;
+
+  font-size: 4.1rem;
+  letter-spacing: 1px;
+  line-height: 51px;
+
+  border: 2px solid white;
+
+  width: 96.5%;
+  height: 78.6%;
+}
+
+.container__reject-a {
+  font-size: 3rem;
+  line-height: 37px;
+  color: #333333;
+  font-style: italic;
+  font-family: "Georgia";
+}
+
+:focus {
+  outline-style: none;
+  outline-width: 0px !important;
+  outline-color: none !important;
+}
+
+@media (max-width: 900px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-image: url(../img/bg-mobile.png);
+    overflow-x: hidden;
+    align-items: flex-start;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+  }
+
+  .container {
+    width: 98.4%;
+    height: 1350px;
+  }
+
+  .container__logo {
+    margin-top: 256px;
+    margin-bottom: 11px;
+  }
+
+  .container__makeup-p {
+    font-size: calc((100vw - 320px) / (750 - 320) * (39 - 13) + 13px);
+    letter-spacing: 4px;
+    line-height: normal;
+
+    margin-top: 11px;
+    margin-bottom: 10.5px;
+  }
+
+  .container__life-p-box {
+    width: 96.7%;
+    height: 100px;
+
+    margin-top: 10.5px;
+    margin-bottom: 153px;
+  }
+
+  .container__life-p {
+    letter-spacing: 5px;
+    font-size: calc((100vw - 320px) / (750 - 320) * (54 - 20) + 20px);
+  }
+
+  .container__email-p {
+    margin-top: 153px;
+    margin-bottom: 14px;
+
+    font-size: calc((100vw - 320px) / (750 - 320) * (30 - 15) + 15px);
+  }
+
+  .container__arrow-icon {
+    margin-top: 14px;
+    margin-bottom: 10.5px;
+
+    display: block;
+    width: 34px;
+    height: 41px;
+  }
+
+  .container__email-box {
+    margin-top: 10.5px;
+    margin-bottom: 5.5px;
+
+    width: 100%;
+  }
+
+  .container__email-input {
+    width: 100%;
+  }
+
+  .container__submit-btn {
+    margin-top: 5.5px;
+    margin-bottom: 17.5px;
+
+    width: 100%;
+    height: 117px;
+  }
+
+  .container__email-input {
+    font-size: calc((100vw - 320px) / (750 - 320) * (35 - 20) + 20px);
+  }
+
+  .container__submit-a {
+    letter-spacing: 1px;
+    font-size: calc((100vw - 320px) / (750 - 320) * (41 - 16) + 16px);
+  }
+
+  .container__reject-a {
+    margin-top: 17.5px;
+    font-size: calc((100vw - 320px) / (750 - 320) * (38 - 20) + 20px);
+  }
+}

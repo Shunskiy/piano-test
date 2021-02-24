@@ -82,6 +82,7 @@ body {
   border: 2px solid #fd722d;
   box-sizing: border-box;
   border-radius: 50px;
+  padding: 15px 20px;
 }
 
 .checkout__get-now {
@@ -98,6 +99,7 @@ body {
   background: #fd722d;
   border-radius: 50px;
   border: 0;
+  padding: 15px 20px;
 }
 
 .checkout__more {
@@ -108,6 +110,8 @@ body {
 }
 
 .checkout__learn {
+  text-decoration: none;
+
   font-family: "Lab Grotesque Medium";
   font-size: 13px;
   line-height: 32px;
@@ -124,6 +128,8 @@ body {
 }
 
 .checkout__sign-in {
+  text-decoration: none;
+
   color: #fd722d;
 }
 
@@ -133,16 +139,52 @@ body {
   outline-color: none !important;
 }
 
+.checkout__learn:after {
+  background-color: #fd722d;
+  display: block;
+  content: "";
+  height: 1px;
+  width: 0%;
+  transition: width 0.3s ease-in-out;
+}
+.checkout__learn:hover:after,
+.checkout__learn:focus:after {
+  width: 100%;
+}
+
+.checkout__sign-in:after {
+  background-color: #fd722d;
+  display: block;
+  content: "";
+  height: 1px;
+  width: 0%;
+  transition: width 0.3s ease-in-out;
+}
+.checkout__sign-in:hover:after,
+.checkout__sign-in:focus:after {
+  width: 100%;
+}
+
+.checkout__get-now:hover {
+  background-color: #ff5500;
+  transition: background-color 0.3s linear;
+}
+
+.checkout__turn-off:hover {
+  background-color: gainsboro;
+  transition: background-color 0.3s linear;
+}
+
 @media (max-width: 700px) {
   .checkout {
     width: 85%;
-    height: 76%;
+    height: 73%;
     padding: 20px;
     padding-bottom: 10px;
     overflow: auto;
   }
 
-  .checkout__logo{
+  .checkout__logo {
     margin-left: 0px;
   }
   .checkout__title {
